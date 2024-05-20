@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagram</title>
+    <link rel="stylesheet" type="text/css" href="asset/asset_diagram/stylesd.css">
+</head>
+<body>
+    <nav class="wrapper">
+        <div class="brand">
+            <div class="firstname">bilangan</div>
+            <div class="lastname">kompleks</div>
+        </div>
+        <ul class="navigation">
+            <li><a href="HOME.html" >Home</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn active" >Calculator ▼</a>
+                <div class="dropdown-content">
+                    <a href="2bilangankompleks.html">2 Bilangan Kompleks</a>
+                    <a href="3bilangankompleks.html">3 Bilangan Kompleks</a>
+                    <a href="diagram.html">Diagram Argand</a>
+                </div>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+    <canvas id="canvas" width="600" height="600"></canvas>
+    <div class="input-container">
+        <label for="real">Real part:</label>
+        <input type="number" id="real" min="-100" max="100" value="0">
+        <label for="imaginary">Imaginary part:</label>
+        <input type="number" id="imaginary" min="-100" max="100" value="0">
+        <button onclick="addComplexNumber()">Add</button>
+        <button onclick="zoomOut()">Zoom Out</button>
+        <button onclick="zoomIn()">Zoom In</button>
+    </div>
+    <script src="asset/asset_diagram/scriptd.js"></script>
+</body>
+</html>

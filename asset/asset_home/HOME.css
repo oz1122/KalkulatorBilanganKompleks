@@ -1,0 +1,181 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+body {
+    background-image: url(7388.png);
+    background-size: cover; 
+    background-position: center; 
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 20px;
+    width: 100%;
+    height: 80px;
+    background-color: #F5F3EE;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+}
+
+.firstname, .lastname {
+    color: black;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.lastname {
+    padding-left: 5px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation > li {
+    list-style-type: none;
+    padding: 15px;
+}
+
+.navigation > li > a {
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 2px solid black;
+}
+
+.navigation > li > a:hover {
+    color: #E1895D;
+    transition: all .3s ease-in-out;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: black;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: #F5F3EE;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 0; 
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #E1895D; 
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.active {
+    background-color: #E1895D;
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 2px solid black;
+}
+
+.active:hover {
+    color: black !important;
+}
+
+.iconkalkulator {
+    display: block; 
+    margin-top: -28%; 
+    margin-left: 70%; 
+    margin-right: auto;
+    width: 28%;
+    height: auto;
+}
+
+.judul {
+    color: saddlebrown;
+    font-size: 80px;
+    font-weight: 1000;
+    text-align: left;
+    margin-top: 115px;
+    margin-left: 70px;
+    letter-spacing: 4.3px;
+}
+
+.teks {
+    margin-top: 70px;
+    margin-left: 70px;
+    font-weight: 900; 
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.5px;
+}
+
+.kelompok {
+    margin-top: 119px;
+    margin-left: 43%;
+    color: #000;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.5px;
+}
+
+.mulai a {
+    color: #FFFBD0; 
+    font-size: 14px; 
+    margin-top: 15px;
+    margin-left: 80px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color:#599681; 
+    display: inline-block;
+    text-align: center;
+}
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator 2 Bilangan Kompleks</title>
+    <link rel="stylesheet" type="text/css" href="asset/asset_2bilangan/styles2.css">
+</head>
+<body>
+    <div class="fContainer">
+        <nav class="wrapper">
+          <div class="brand">
+            <div class="firstname">bilangan</div>
+            <div class="lastname">kompleks</div>
+          </div>
+          <ul class="navigation">
+            <li><a href="HOME.html">Home</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn active">Calculator ▼</a>
+              <div class="dropdown-content">
+                <a href="2bilangankompleks.html">2 Bilangan Kompleks</a>
+                <a href="3bilangankompleks.html">3 Bilangan Kompleks</a>
+                <a href="diagram.html">Diagram Argand</a>
+              </div>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    <div class="container">
+        <h1>Kalkulator 2 Bilangan Kompleks</h1>
+        <div class="input-group">
+            <label for="real1">Bagian Real Bilangan Pertama:</label>
+            <input type="number" id="real1" step="any">
+        </div>
+        <div class="input-group">
+            <label for="imag1"> <b> Bagian Imajiner Bilangan Pertama: </b></label>
+            <input type="number" id="imag1" step="any">
+        </div>
+        <div class="input-group">
+            <label for="real2">Bagian Real Bilangan Kedua:</label>
+            <input type="number" id="real2" step="any">
+        </div>
+        <div class="input-group">
+            <label for="imag2">Bagian Imajiner Bilangan Kedua:</label>
+            <input type="number" id="imag2" step="any">
+        </div>
+        <div class="input-group">
+            <label for="operasi">Operasi:</label>
+            <select id="operasi">
+                <option value="tambah">Tambah</option>
+                <option value="kurang">Kurang</option>
+                <option value="kali">Kali</option>
+                <option value="bagi">Bagi</option>
+            </select>
+        </div>
+        <button onclick="hitung()">Hitung</button>
+        <div id="hasil" class="hasil"></div>
+    </div>
+    </div>
+    <script src="asset/asset_2bilangan/script2.js"></script>
+</body>
+</html>
